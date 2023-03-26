@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.jogo {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.dicas{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  color: #fff;
+  gap: 10px;
+}
+
+.dicas .dica:nth-child(5){
+  grid-column: 1 / -1;
+}
+
+.dica {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4px;
+  gap: 10px;
+  padding: 15px;
+  background: #333;
+}
+
+.lista-dicas {
+  display: flex;
+  gap: 20px;
+  font-size: 1.5rem;
+}
+
+.lista-dicas li {
+  border: 1px solid #ccc;
+  padding: 5px 15px;
+  border-radius: 4px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+.adivinhar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+small {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  display: block;
+}
+
+input {
+  padding: 10px;
+  outline: none;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px){
+
+  img {
+    width: 100px;
+  }
+
+  .jogo{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .dicas {
+    grid-template-columns: 1fr;
+  }
+}
